@@ -280,7 +280,7 @@ Compress or decompress files using LZW algorithm\n\n\
     }
     pos = byte;
     while ((byte = byte_read(byb)) >= 0) {
-      isc++;
+      ++isc;
       npos = (pool[pos] >> 16) << 8;
       if (npos && pool[npos + byte]) {
         pos = npos + byte;
